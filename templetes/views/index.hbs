@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <link rel="stylesheet" href="./css/precss.css">
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    {{>navbar}}
+    <section class="vivo">
+        <img src="./img/bg.jpg" alt="" id="bg">
+        <img src="./img/moon.png" alt="" id="moon">
+        <img src="./img/mountain.png" alt="" id="mountain">
+        <img src="./img/road.png" alt="" id="road">
+        <h2 id="text">Welcome To MERN Project</h2>
+        <h2 id="true">The Best SignIn/SignUp</h2>
+    </section>
+    <hr>
+    <section id="about-section">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm" id="card-one">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title text-center">Thought</h5>
+                            <p class="card-text text-center">““Indeed, the ratio of time spent reading versus writing is
+                                well over 10 to 1. We are constantly reading old code as part of the effort to write new
+                                code. ...[Therefore,] making it easy to read makes it easier to write.””
+                            </p>
+                            <button type="button" class="btn btn-dark">― Robert C. Martin</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="card-two">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title text-center">Thought</h5>
+                            <p class="card-text">“With software there are only two possibilites: either the users
+                                control the programme or the programme controls the users. If the programme controls the
+                                users,
+                                and the developer controls the programme, then the programme is an instrument of unjust
+                                power.”
+                            </p>
+                            <button type="button" class="btn btn-dark">― Richard M. Stallman</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="card-three">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title text-center">Thought</h5>
+                            <p class="card-text">
+                                “You are a computer. If you become front-end you'll count the likes on social media.
+                                If you become back-end you'll be breathing deep on a mountain. Listen! one life man.
+                                Become a Full-stack.”
+                            </p>
+                            <button type="button" class="btn btn-dark">― Chetan M. Kumbhar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="form-section ">
+        <div class="container text-center ">
+            <h1 class="text-center" style="color:white;">Contact Us</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="/" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Full Name"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="num" id="num" name="num" class="form-control" placeholder="Contact number">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select type="country" name="country" id="country" class="form-control" required>
+                                    <option selected>Country</option>
+                                    <option>India</option>
+                                    <option>England</option>
+                                    <option>America</option>
+                                    <option>China</option>
+                                    <option>Japan</option>
+                                    <option>Canada</option>
+                                    <option>Brazil</option>
+                                    <option>Australia</option>
+                                    <option>Bhutan</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <input type="text" id="sub" name="sub" class="form-control" placeholder="Subject"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <textarea name="desc" id="desc" class="form-control" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 text-centre">
+                                <button class="btn btn-primary"><i class="fas fa-paper-plane"></i>Send message</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-md-6 address" style="color: #fff;">
+                    <h5>Call us/Whatsapp</h5>
+                    <p><i class="fas   fa-phone-alt "></i>+91 9648239416</p>
+                    <h5>Email</h5>
+                    <p><i class="fas   fa-envelope "></i>shivanshverma47@gmail.com</p>
+                    <h5>Working Hours</h5>
+                    <p>Mon-Fri:9am-6pm(IST)</p>
+                    <h5>Address</h5>
+                    <p>Lucknow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+</head>
+
+<body onload="myFunction()" style="background:  #0a2a43;">
+    <div id="loading"></div>
+<div class="container emp-profile">
+    <form >
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./shivansh.jpeg" alt="shivansh pivc">
+            </div>
+            <div class="col-md-6"><div class="profile-head">
+                <h5>
+                    Shivansh Verma
+                </h5>
+                <h6>Software engineer</h6>
+                <ul class="nav nav-tabs">
+                    <li class="nav-items">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home">About</a>
+                    </li>
+                </ul>
+            </div></div>
+        </div>
+    </form>
+</div>
+    <script>
+        //for preloader
+        var preloader = document.getElementById("loading");
+        function myFunction() {
+            preloader.style.display = 'none';
+        };
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
