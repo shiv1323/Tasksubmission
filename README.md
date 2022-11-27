@@ -13,3 +13,7 @@ Tech used:
 1)MongoDB
 2) Bootstrap
 3)hbs
+
+
+
+REMARK: Starting November 28th, 2022, free Heroku Dynos, free Heroku Postgres, and free Heroku Data for Redis® will no longer be available.
