@@ -14,8 +14,8 @@
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.10",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^5.13.19",
     "validator": "^13.5.2"
   }
 }
